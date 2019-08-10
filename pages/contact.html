@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- start of css files -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <!-- end of css files -->
+</head>
+
+<body>
+  <!-- start of container-fluid -->
+  <div class="container-fluid">
+    <!-- start of nav -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img class="mylogo" src="https://i.ibb.co/wNwzYTN/Betahood-three.png" alt="Betahood-three" border="0"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="facilitators.html">Facilitators</a></li>
+          <li class="active"><a  href="#contact">Reach out</a></li>
+          <li><a href="account.html">Login</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo" >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="facilitators.html">Facilitators</a></li>
+          <li class="active"><a href="#contact">Reach out</a></li>
+          <li><a href="account.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="breadcrumby col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="#" class="breadcrumb">Reach Out</a>
+
+      </div>
+    </nav>
+    <!-- end of nav -->
+
+        <!-- start of floating button -->
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_comment</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating" ><i href="#" class="fa fa-instagram"></i></a></li>
+            <li><a class="btn-floating" ><i href="#" class="fa fa-linkedin"></i></a></li>
+            <li><a class="btn-floating" ><i href="#" class="fa fa-facebook"></i></a></li>
+            <li><a class="btn-floating blue"><i href="#" class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <!-- end of floating button -->
+
+    <div class="contact1">
+      <div class="container">
+        <div class="text-center mb-80">
+          <h4 class="section-title text-uppercase">Get in Touch</h4>
+          <p class="section-sub">
+            Hello, We love guests and Feedback, Please contact us through the following contact lives. You may also opt
+            to visit us at our offices.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col m8">
+            <form name="contact-form" id="contactForm" action=" " method="POST">
+              <div class="row">
+                <div class="col m6">
+                  <div class="input-field">
+                    <input type="text" name="name" placeholder="Name" class="validate" id="name" required>
+                    <label for="name"></label>
+                  </div>
+                </div>
+                <div class="col m6">
+                  <div class="input-field">
+                    <label class="sr-only" for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="Email" class="validate" required>
+                    <label for="email" data-error="wrong" data-success="right"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m6">
+                  <div class="input-field">
+                    <input id="phone" type="tel" name="phone" placeholder="Phone Number" class="validate" required>
+                    <label for="phone"></label>
+                  </div>
+                </div>
+                <div class="col m6">
+                  <div class="input-field">
+                    <input id="website" type="text" placeholder="Website" name="website" class="validate" required>
+                    <label for="website"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-field">
+                <textarea name="message" id="message" class="materialize-textarea" placeholder="Message" required></textarea>
+                <label for="message"></label>
+              </div>
+              <button type="submit" name="submit"
+                class="waves-effect waves-light btn submit-button pink mt-30 mb-sm-30">Send Message</button>
+            </form>
+          </div>
+          <div class="col m4 contact-info">
+            <address>
+              <i class="material-icons brand-color"></i>
+              <div class="address">
+                <p>1355 Groovel Westlands<br>
+                  Nairobi Kenya</p>
+              </div>
+              <i class="material-icons brand-color"></i>
+              <div class="phone">
+                <p>Phone: (254) 742-687661</p>
+              </div>
+              <i class="material-icons brand-color"></i>
+              <div class="mail">
+                <p><a href="mailto:#">info@hotlyb.technology</a><br>
+                  <a href="#">www.hotylib.com</a></p>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end of table of Contents -->
+  </div>
+
+  <!-- start of Footer -->
+  <!-- <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="black-text">Quick Look</h5>
+              <p class="grey-text text-lighten-4">
+                Hotlyb is a product developed by Blueman Technologies. Other Products are listed below:
+              </p>
+              <div class="row">
+                <div class="col l4 offset-l2 s12">
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 3</a></li>
+                  </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 4</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 5</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Project 6</a></li>
+                  </ul>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="black-text">Quick Panel</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Facilitators</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Community Help</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contact our Offices</a></li>
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2019 Hotlyb | Blueman Technologies
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+  </div>
+        </div>
+      </footer> 
+   end of Footer -->
+
+
+
+  <!-- start of javascript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- <script src="https://trendytheme.net/demo/matrox/assets/bootstrap/js/bootstrap.min.js"></script>     -->
+  <script src="materialize.min.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+
+
+  </script>
+  <!-- end of javascript -->
+  <!-- end of container-fluid -->
+</body>
+
+</html>

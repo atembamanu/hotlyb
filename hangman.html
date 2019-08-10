@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <script>
+        var words = ["javascript", "amonkey", "amazing", "pancake"];
+
+        function getRandomWord(words) {
+            return words[Math.floor(Math.random() * words.length)];
+
+        }
+        //test if random word is selected
+        //prompt(getRandomWord(words));
+
+
+        function displayProgress() {
+            var guessedword = getRandomWord(words);
+            var guessedletter = myGuesses();
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+        function guessVerifyWord() {
+
+            var myguess = myGuesses();
+            var guessCount = 0;
+            console.log(myguess);
+
+            if (myguess != null) {
+                
+
+
+                if (myguess.length > 1 && myguess.length == "" ) {
+                    alert("It must be a letter");
+                    word = null;
+                    guessVerifyWord();
+                } else {
+                    guessCount++;
+                    var word = getRandomWord(words);
+
+
+                    for (const letter of word) {
+
+                        var myletter = letter;
+
+                        console.log(myletter);
+                    }
+
+                    //var str = 'To be, or not to be, that is the question.';
+
+                    //check if the guessed letter is in the guessed word.
+                    var result = word.includes(myguess);
+
+                    //console.log(result);
+
+                    //if true
+                    if (result) {
+
+                        alert("Awesome..You got it, Try next letter");
+                        
+
+                        guessVerifyWord();
+
+                        //if false    
+                    } else {
+                        alert("Not that one, Go again");
+                        console.clear();
+                        console.c
+                        guessVerifyWord();
+
+                    }
+
+                }
+            }else{
+            alert("You quitted, Have a nice day");
+            
+            }
+
+
+
+        }
+        guessVerifyWord();
+
+        function myGuesses() {
+
+            var myguess = prompt("Guess a Letter of the magic  word.", "");
+            return myguess;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
